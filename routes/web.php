@@ -14,7 +14,40 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+Route::get('/404', function () {
+    return view('404');
+});
+Route::get('/account', function () {
+    return view('account');
+});
+Route::get('/blog-archive', function () {
+    return view('blog-archive');
+});
+Route::get('/blog-archive-2', function () {
+    return view('blog-archive-2');
+});
+Route::get('/blog-single', function () {
+    return view('blog-single');
+});
+Route::get('/cart', function () {
+    return view('cart');
+});
+Route::get('/checkout', function () {
+    return view('checkout');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/product', function () {
+    return view('product');
+});
+Route::get('/product-detail', function () {
+    return view('product');
+});
+Route::get('/wishlist', function () {
+    return view('wishlist');
 });
 
 Auth::routes();

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Daily Shop | Account Page</title>
+    <title>Daily Shop | Pages</title>
     
     <!-- Font awesome -->
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -101,10 +101,10 @@
               <!-- / header top left -->
               <div class="aa-header-top-right">
                 <ul class="aa-head-top-nav-right">
-                  <li><a href="account.html">My Account</a></li>
-                  <li class="hidden-xs"><a href="wishlist.html">Wishlist</a></li>
-                  <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
-                  <li class="hidden-xs"><a href="checkout.html">Checkout</a></li>
+                  <li><a href="account">My Account</a></li>
+                  <li class="hidden-xs"><a href="wishlist">Wishlist</a></li>
+                  <li class="hidden-xs"><a href="cart">My Cart</a></li>
+                  <li class="hidden-xs"><a href="checkout">Checkout</a></li>
                   <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
                 </ul>
               </div>
@@ -124,12 +124,12 @@
               <!-- logo  -->
               <div class="aa-logo">
                 <!-- Text based logo -->
-                <a href="index.html">
+                <a href="">
                   <span class="fa fa-shopping-cart"></span>
                   <p>daily<strong>Shop</strong> <span>Your Shopping Partner</span></p>
                 </a>
                 <!-- img based logo -->
-                <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+                <!-- <a href="index"><img src="img/logo.jpg" alt="logo img"></a> -->
               </div>
               <!-- / logo  -->
                <!-- cart box -->
@@ -203,7 +203,7 @@
           <div class="navbar-collapse collapse">
             <!-- Left nav -->
             <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="">Home</a></li>
               <li><a href="#">Men <span class="caret"></span></a>
                 <ul class="dropdown-menu">                
                   <li><a href="#">Casual</a></li>
@@ -295,19 +295,19 @@
                 </ul>
               </li>
               <li><a href="#">Furniture</a></li>            
-              <li><a href="blog-archive.html">Blog <span class="caret"></span></a>
+              <li><a href="blog-archive">Blog <span class="caret"></span></a>
                 <ul class="dropdown-menu">                
-                  <li><a href="blog-archive.html">Blog Style 1</a></li>
-                  <li><a href="blog-archive-2.html">Blog Style 2</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>                
+                  <li><a href="blog-archive">Blog Style 1</a></li>
+                  <li><a href="blog-archive-2">Blog Style 2</a></li>
+                  <li><a href="blog-single">Blog Single</a></li>                
                 </ul>
               </li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact">Contact</a></li>
               <li><a href="#">Pages <span class="caret"></span></a>
                 <ul class="dropdown-menu">                
-                  <li><a href="product.html">Shop Page</a></li>
-                  <li><a href="product-detail.html">Shop Single</a></li>                
-                  <li><a href="404.html">404 Page</a></li>                
+                  <li><a href="product">Shop Page</a></li>
+                  <li><a href="product-detail">Shop Single</a></li>                
+                  <li><a href="404">404 Page</a></li>                
                 </ul>
               </li>
             </ul>
@@ -318,67 +318,11 @@
     </div>
   </section>
   <!-- / menu -->  
- 
-  <!-- catg header banner section -->
-  <section id="aa-catg-head-banner">
-    <img src="img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
-    <div class="aa-catg-head-banner-area">
-     <div class="container">
-      <div class="aa-catg-head-banner-content">
-        <h2>Account Page</h2>
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>                   
-          <li class="active">Account</li>
-        </ol>
-      </div>
-     </div>
-   </div>
-  </section>
-  <!-- / catg header banner section -->
 
- <!-- Cart view section -->
- <section id="aa-myaccount">
-   <div class="container">
-     <div class="row">
-       <div class="col-md-12">
-        <div class="aa-myaccount-area">         
-            <div class="row">
-              <div class="col-md-6">
-                <div class="aa-myaccount-login">
-                <h4>Login</h4>
-                 <form action="" class="aa-login-form">
-                  <label for="">Username or Email address<span>*</span></label>
-                   <input type="text" placeholder="Username or email">
-                   <label for="">Password<span>*</span></label>
-                    <input type="password" placeholder="Password">
-                    <button type="submit" class="aa-browse-btn">Login</button>
-                    <label class="rememberme" for="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
-                    <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
-                  </form>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="aa-myaccount-register">                 
-                 <h4>Register</h4>
-                 <form action="" class="aa-login-form">
-                    <label for="">Username or Email address<span>*</span></label>
-                    <input type="text" placeholder="Username or email">
-                    <label for="">Password<span>*</span></label>
-                    <input type="password" placeholder="Password">
-                    <button type="submit" class="aa-browse-btn">Register</button>                    
-                  </form>
-                </div>
-              </div>
-            </div>          
-         </div>
-       </div>
-     </div>
-   </div>
- </section>
- <!-- / Cart view section -->
+@yield('container')
 
-  <!-- footer -->  
-  <footer id="aa-footer">
+    <!-- footer -->  
+    <footer id="aa-footer">
     <!-- footer bottom -->
     <div class="aa-footer-top">
      <div class="container">
@@ -486,7 +430,7 @@
             <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
             <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
             <div class="aa-register-now">
-              Don't have an account?<a href="account.html">Register now!</a>
+              Don't have an account?<a href="account">Register now!</a>
             </div>
           </form>
         </div>                        
